@@ -30,7 +30,7 @@ body {
 }
 
 .grid-cell {
-    border: 1px solid rgba(0, 0, 0, 0.146);
+    border: 1px solid rgba(0, 0, 0, 0.059);
     border-radius: 5px;
     height: auto;
     aspect-ratio: 1/1;
