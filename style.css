@@ -29,24 +29,33 @@ body {
     border-radius: 10px;
 }
 
-#control-bar > #red {
+#control-bar > #color-selectors {
+    display: flex;
+    gap: 10px;
+}
+
+#control-bar > #color-selectors > button {
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+#control-bar > #color-selectors > #red {
     background-color: red;
-    border: none;
+    border: 5px solid white;
 }
 
-#control-bar > #green {
+#control-bar > #color-selectors > #green {
     background-color: green;
-    border: none;
 }
 
-#control-bar > #blue {
+#control-bar > #color-selectors > #blue {
     background-color: blue;
-    border: none;
 }
 
-#control-bar > #yellow {
+#control-bar > #color-selectors > #yellow {
     background-color: yellow;
-    border: none;
 }
 
 #clear {
