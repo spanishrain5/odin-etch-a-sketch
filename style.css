@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-container {
+    display: flex;
+    width: 960px;
+    height: 960px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
