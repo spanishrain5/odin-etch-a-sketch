@@ -51,10 +51,13 @@ body {
 
 #clear {
     margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #new-grid {
-    margin-left: auto;
+    align-self: flex-end;
     width: 140px;
     flex: 0 0 180px;
 }

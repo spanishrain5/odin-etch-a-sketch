@@ -1,11 +1,15 @@
-const GRID_SIZE = 16;
+const DEFAULT_GRID_SIZE = 16;
 const COLOR = 'red';
 
 const gridContainer = document.querySelector('#grid-container');
+const clearButton = document.querySelector('#clear');
 const newGridButton = document.querySelector('#new-grid');
 
-drawGrid(GRID_SIZE);
+let currentGridSize = DEFAULT_GRID_SIZE;
 
+drawGrid(currentGridSize);
+
+clearButton.addEventListener('click', () => clearGrid());
 newGridButton.addEventListener('click', () => replaceGrid());
 
 function drawGrid(gridSize) {
@@ -26,11 +30,17 @@ function colorCell(event) {
     event.target.style.backgroundColor = COLOR;
 }
 
+function clearGrid() {
+    gridContainer.replaceChildren();
+    drawGrid(currentGridSize);
+}
+
 function replaceGrid() {
     let size = promptForSize();
     if (!size) {
         return 0;
     } else {
+        currentGridSize = size;
         gridContainer.replaceChildren();
         drawGrid(size);
     }
