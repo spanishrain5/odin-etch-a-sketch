@@ -10,10 +10,63 @@ body {
     align-items: center;
 }
 
+#app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#control-bar {
+    display: flex;
+    gap: 10px;
+}
+
+#control-bar > button {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#control-bar > #red {
+    background-color: red;
+    border: none;
+}
+
+#control-bar > #green {
+    background-color: green;
+    border: none;
+}
+
+#control-bar > #blue {
+    background-color: blue;
+    border: none;
+}
+
+#control-bar > #yellow {
+    background-color: yellow;
+    border: none;
+}
+
+#clear {
+    margin-left: auto;
+}
+
+#new-grid {
+    margin-left: auto;
+    width: 140px;
+    flex: 0 0 180px;
+}
+
+#clear:hover, #new-grid:hover {
+    background-color: rgb(192, 192, 192);
+}
+
 #grid-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 5px;
     width: 960px;
     height: 960px;
