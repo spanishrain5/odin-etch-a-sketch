@@ -66,6 +66,9 @@ body {
 }
 
 #new-grid {
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    font-size: 16px;
     align-self: flex-end;
     width: 140px;
     flex: 0 0 180px;
